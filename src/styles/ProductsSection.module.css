@@ -1,0 +1,227 @@
+/* src/styles/ProductsSection.module.css */
+
+.productsSection {
+  background: #f8f9fa;
+  padding: 5rem 0;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Header con título */
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 900;
+  color: #1a1a1a;
+  margin: 0 0 1rem 0;
+  letter-spacing: 0.02em;
+}
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background: #dc2626;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* Caja de oferta especial */
+.offerBox {
+  background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+  border: 2px solid #fecaca;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  margin: 0 auto 4rem auto;
+  max-width: 600px;
+  box-shadow: 0 4px 15px rgba(220, 38, 38, 0.1);
+}
+
+.offerTitle {
+  color: #dc2626;
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  font-weight: 800;
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.offerDiscount {
+  color: #1a1a1a;
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.offerCta {
+  color: #dc2626;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* Grid de productos */
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+/* Card de producto */
+.productCard {
+  background: white;
+  border-radius: 25px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.productCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Etiqueta de categoría */
+.categoryTag {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: #dc2626;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  z-index: 2;
+}
+
+/* Contenedor de imagen */
+.productImageContainer {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 1.5rem;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.productCard:hover .productImage {
+  transform: scale(1.05);
+}
+
+/* Información del producto */
+.productInfo {
+  text-align: center;
+}
+
+.productName {
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 1rem 0;
+  letter-spacing: 0.02em;
+}
+
+/* Descripción del producto */
+.productDescription {
+  color: #6b7280;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.5;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+  font-weight: 400;
+}
+
+/* Botón de WhatsApp */
+.whatsappButton {
+  background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(22, 163, 74, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsappButton:hover {
+  background: linear-gradient(135deg, #15803d 0%, #166534 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(22, 163, 74, 0.4);
+}
+
+.whatsappButton:active {
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .productsSection {
+    padding: 3rem 0;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .productsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .offerBox {
+    margin: 0 auto 3rem auto;
+    padding: 1.5rem;
+  }
+  
+  .productImageContainer {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .productsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .productCard {
+    padding: 1rem;
+  }
+  
+  .productImageContainer {
+    height: 180px;
+  }
+}

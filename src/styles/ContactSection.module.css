@@ -1,0 +1,203 @@
+/* src/styles/ContactSection.module.css */
+
+.contactSection {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d1b1b 100%);
+  padding: 3rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.contactSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 30% 40%, rgba(220, 38, 38, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 70% 60%, rgba(220, 38, 38, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Caja principal de contacto - COMPACTA */
+.contactBox {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contactBox:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  border-color: rgba(220, 38, 38, 0.3);
+}
+
+/* Contenedor del ícono - MÁS PEQUEÑO */
+.iconContainer {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
+  flex-shrink: 0;
+  animation: pulse 3s infinite;
+}
+
+.searchIcon {
+  color: white;
+  width: 24px;
+  height: 24px;
+}
+
+/* Contenedor de texto */
+.textContent {
+  flex: 1;
+  text-align: left;
+}
+
+/* Textos - MÁS PEQUEÑOS */
+.title {
+  color: white;
+  font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+  font-weight: 700;
+  margin: 0 0 0.3rem 0;
+  letter-spacing: 0.02em;
+}
+
+.subtitle {
+  color: #dc2626;
+  font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+  font-weight: 600;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.description {
+  display: none; /* Ocultar descripción larga */
+}
+
+/* Botón de WhatsApp - COMPACTO */
+.whatsappButton {
+  background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  font-size: clamp(0.9rem, 1.8vw, 1rem);
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  box-shadow: 0 4px 15px rgba(22, 163, 74, 0.4);
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.whatsappButton:hover {
+  background: linear-gradient(135deg, #15803d 0%, #166534 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(22, 163, 74, 0.5);
+}
+
+.whatsappButton:active {
+  transform: translateY(0);
+}
+
+.whatsappIcon {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+}
+
+/* Animaciones */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(220, 38, 38, 0.6);
+  }
+}
+
+/* Responsive - COMPACTO */
+@media (max-width: 768px) {
+  .contactSection {
+    padding: 2rem 0;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .contactBox {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  .textContent {
+    text-align: center;
+  }
+  
+  .iconContainer {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .searchIcon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .whatsappButton {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .whatsappIcon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactBox {
+    padding: 1.2rem;
+    gap: 1rem;
+  }
+  
+  .whatsappButton {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,12 +1,17 @@
+// src/pages/index.js
 import Head from 'next/head';
 import HeroSection from '../components/HeroSection';
+import ProductsSection from '../components/ProductsSection';
+import ContactSection from '../components/ContactSection';
+import WhyChooseSection from '../components/WhyChooseSection';
+
 
 export default function Home() {
   return (
     <>
       <Head>
         <title>Pro Fit RD - Tienda de Proteínas y Suplementos</title>
-        <meta name="description" content="Los mejores suplementos para alcanzar tus objetivos fitness. Whey Isolate, Mass Gainer, Clear Protein y Glutamina." />
+        <meta name="description" content="Los mejores suplementos para alcanzar tus objetivos fitness." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         
@@ -18,11 +23,10 @@ export default function Home() {
 
       <main>
         <HeroSection />
-        
-        {/* Aquí agregaremos más secciones después */}
-        <section id="productos" style={{height: '100vh', background: '#f5f5f5', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-          <h2 style={{fontSize: '2rem', color: '#333'}}>Sección de Productos (Próximamente)</h2>
-        </section>
+        <ProductsSection />
+        <ContactSection />
+        <WhyChooseSection />
+
       </main>
     </>
   );

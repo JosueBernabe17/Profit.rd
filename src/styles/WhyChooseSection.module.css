@@ -134,13 +134,48 @@
   box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
 }
 
-/* Botón flotante de WhatsApp */
-.floatingWhatsApp {
+/* BOTONES FLOTANTES - NUEVO CÓDIGO */
+.floatingButtons {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 1000;
+}
+
+/* Botón de Instagram */
+.floatingInstagram {
   width: 60px;
   height: 60px;
+  background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(131, 58, 180, 0.4);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulseInstagram 4s infinite;
+}
+
+.floatingInstagram:hover {
+  background: linear-gradient(135deg, #8a3ab9 0%, #e95950 50%, #fccc63 100%);
+  transform: scale(1.1);
+  box-shadow: 0 12px 35px rgba(131, 58, 180, 0.5);
+}
+
+.floatingInstagram:active {
+  transform: scale(1.05);
+}
+
+/* Botón de WhatsApp */
+.floatingWhatsApp {
+  width: 65px;
+  height: 65px;
   background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
   border: none;
   border-radius: 50%;
@@ -151,8 +186,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1000;
-  animation: pulse 3s infinite;
+  animation: pulseWhatsApp 3s infinite;
 }
 
 .floatingWhatsApp:hover {
@@ -166,12 +200,21 @@
 }
 
 /* Animaciones */
-@keyframes pulse {
+@keyframes pulseWhatsApp {
   0%, 100% {
     box-shadow: 0 8px 25px rgba(22, 163, 74, 0.4);
   }
   50% {
     box-shadow: 0 8px 25px rgba(22, 163, 74, 0.4), 0 0 0 10px rgba(22, 163, 74, 0.1);
+  }
+}
+
+@keyframes pulseInstagram {
+  0%, 100% {
+    box-shadow: 0 8px 25px rgba(131, 58, 180, 0.4);
+  }
+  50% {
+    box-shadow: 0 8px 25px rgba(131, 58, 180, 0.4), 0 0 0 10px rgba(131, 58, 180, 0.1);
   }
 }
 
@@ -203,11 +246,19 @@
     height: 60px;
   }
   
-  .floatingWhatsApp {
-    width: 55px;
-    height: 55px;
+  .floatingButtons {
     bottom: 1.5rem;
     right: 1.5rem;
+  }
+  
+  .floatingInstagram {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .floatingWhatsApp {
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -221,11 +272,19 @@
     height: 50px;
   }
   
-  .floatingWhatsApp {
-    width: 50px;
-    height: 50px;
+  .floatingButtons {
     bottom: 1rem;
     right: 1rem;
+  }
+  
+  .floatingInstagram {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .floatingWhatsApp {
+    width: 55px;
+    height: 55px;
   }
 }
 

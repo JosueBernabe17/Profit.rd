@@ -16,8 +16,8 @@ const ContactSection = () => {
           {/* Ícono de búsqueda/pregunta */}
           <div className={styles.iconContainer}>
             <svg 
-              width="18" 
-              height="18" 
+              width="12" 
+              height="12" 
               viewBox="0 0 24 24" 
               fill="none" 
               className={styles.searchIcon}
@@ -48,9 +48,9 @@ const ContactSection = () => {
             onClick={handleWhatsAppContact}
           >
             <svg 
-              width="24" 
-              height="24" 
-              viewBox="0 0 24 24" 
+              width="14" 
+              height="14" 
+              viewBox="0 0 14 14" 
               fill="currentColor"
               className={styles.whatsappIcon}
             >

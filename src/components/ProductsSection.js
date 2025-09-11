@@ -7,7 +7,7 @@ const ProductsSection = () => {
     {
       id: 1,
       name: "WHEY ISOLATE",
-      category: "Isolate",
+      category: "Proteína",
       description: "Proteína de rápida absorción ideal para después del entrenamiento.",
       image: "/products/whey-isolate.png", // Cambia por tus imágenes
       categoryColor: "#dc2626"
@@ -15,7 +15,7 @@ const ProductsSection = () => {
     {
       id: 2,
       name: "MASS GAINER", 
-      category: "Gainer",
+      category: "Proteína",
       description: "Ideal para aumentar masa muscular y peso corporal",
       image: "/products/mass-gainer.png", // Cambia por tus imágenes
       categoryColor: "#dc2626"
@@ -23,7 +23,7 @@ const ProductsSection = () => {
     {
       id: 3,
       name: "CLEAR PREMIUM",
-      category: "Clear", 
+      category: "Proteína", 
       description: "Proteína pura para definición y recuperación muscular.",
       image: "/products/clear-protein.png", // Cambia por tus imágenes
       categoryColor: "#dc2626"
@@ -32,7 +32,7 @@ const ProductsSection = () => {
    
       id: 4,
       name: "BPI SPORTS ISO HD",
-      category: "Isolate",
+      category: "Proteína",
       description: "Proteína de suero hidrolizada para una absorción ultra rápida.", 
       image: "/products/bpi-sports-iso-hd.png", // Cambia por tus imágenes
       categoryColor: "#dc2626"
@@ -41,7 +41,7 @@ const ProductsSection = () => {
     {
       id: 5,
       name: "RULE 1 MASS GAINER",
-      category: "Gainer",
+      category: "Proteína",
       description: "Fórmula avanzada para un aumento de masa muscular limpio y efectivo.", 
       image: "/products/rule1-mass-gainer.png", // Cambia por tus imágenes
       categoryColor: "#dc2626"
@@ -50,20 +50,37 @@ const ProductsSection = () => {
     {
         id: 6,
         name: "CLEAR PREMIUM",
-        category: "Clear", 
+        category: "Proteína", 
         description: "Proteína pura para definición y recuperación muscular.",
         image: "/products/clear-protein-c.png", // Cambia por tus imágenes
         categoryColor: "#dc2626"
     },
 
     {
-      id: 7,
+        id: 7,
+        name: "MuscleTech CREATINA",
+        category: "Creatina",
+        description: "Aumenta tu fuerza y potencia en entrenamientos de alta intensidad.",
+        image: "/products/creatinaMuscle.png", 
+        categoryColor: "#dc2626"
+     
+    },
+    {
+      id: 8,
       name: "GLUTAMINA",
-      category: "Recovery",
+      category: "Recuperación",
       description: "Máxima recuperación muscular y fortalecimiento del sistema inmune.", 
       image: "/products/glutamine.png", // Cambia por tus imágenes
       categoryColor: "#dc2626"
-    }
+    },
+    {
+        id: 9, 
+        name: "CREATINA NUTREX MONOHIDRATO",
+        category: "Creatina",
+        description: "Mejora tu rendimiento físico y aumenta la masa muscular magra.",
+        image: "/products/creatinaNutrex.png", 
+        categoryColor: "#dc2626"
+    },
   ];
 
     const handleWhatsApp = (productName) => {

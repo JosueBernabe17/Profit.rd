@@ -47,7 +47,7 @@ const HeroSection = () => {
             Los mejores suplementos para alcanzar tus objetivos fitness.
           </p>
           <p className={styles.productsList}>
-            Whey Isolate, Mass Gainer, Clear Protein y Glutamina.
+            Proteínas, Creatinas, Aminoácidos y Pre-workout.
           </p>
           <p className={styles.guarantee}>
             Calidad garantizada, resultados comprobados.

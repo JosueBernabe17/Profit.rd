@@ -1,3 +1,4 @@
+// src/components/SupplementGuideSection.js
 import styles from '../styles/SupplementGuideSection.module.css';
 
 const SupplementGuideSection = () => {
@@ -58,7 +59,7 @@ const SupplementGuideSection = () => {
     {
       id: 5,
       question: "¿Cómo elegir mi suplemento?",
-      description: "Todo depende de tu objetivo: definir (Isolate), ganar masa (Gainer),  refrescante(Clear), o recuperación total (Glutamina).",
+      description: "Todo depende de tu objetivo: definir (Isolate), ganar masa (Gainer), refrescante(Clear), o recuperación total (Glutamina).",
       recommendation: "¿Dudas? Contáctanos y te ayudamos a elegir el producto perfecto para ti",
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -83,8 +84,8 @@ const SupplementGuideSection = () => {
             Conoce más sobre nuestros productos y descubre cuál es el ideal para tus objetivos fitness.
           </p>
         </div>
-
-        {/* Grid de guías */}
+        
+        {/* Grid de guías - TODOS IGUALES */}
         <div className={styles.guidesGrid}>
           {guides.map((guide) => (
             <div key={guide.id} className={styles.guideCard}>

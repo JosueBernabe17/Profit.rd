@@ -71,7 +71,8 @@ const WhyChooseSection = () => {
         </svg>
       ),
 
-       buttonText: "Creatina"
+          
+      buttonText: "Creatina"
     },
     {
       id: 6,
@@ -106,8 +107,7 @@ const WhyChooseSection = () => {
 
   return (
     <section className={styles.whyChooseSection}>
-      <div className={styles.container}>
-        
+      <div className={styles.container}> 
         {/* Header */}
         <div className={styles.header}>
           <h2 className={styles.title}>¿POR QUÉ ELEGIR PRO FIT?</h2>
@@ -116,7 +116,6 @@ const WhyChooseSection = () => {
             Cada suplemento está diseñado para un objetivo específico. Conoce cuál es el ideal para ti.
           </p>
         </div>
-
         {/* Grid de beneficios */}
         <div className={styles.benefitsGrid}>
           {benefits.map((benefit) => (
@@ -142,7 +141,6 @@ const WhyChooseSection = () => {
                   {benefit.buttonText}
                 </div>
               </div>
-
             </div>
           ))}
         </div>

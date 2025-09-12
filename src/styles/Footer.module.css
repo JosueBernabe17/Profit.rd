@@ -3,7 +3,7 @@
 .footer {
   background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
   color: white;
-  padding: 4rem 0 2rem 0;
+  padding: 3rem 0 1.5rem 0; /* Más compacto */
   position: relative;
   overflow: hidden;
 }
@@ -33,8 +33,8 @@
 .footerContent {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  gap: 3rem;
-  margin-bottom: 3rem;
+  gap: 2.5rem; /* Menos espacio entre columnas */
+  margin-bottom: 2rem; /* Más compacto */
 }
 
 /* Información de la empresa */
@@ -44,7 +44,7 @@
 
 .companyName {
   color: white;
-  font-size: clamp(1.8rem, 3vw, 2.2rem);
+  font-size: clamp(1.6rem, 3vw, 2rem); /* Ligeramente más pequeño */
   font-weight: 900;
   margin: 0 0 0.5rem 0;
   letter-spacing: 0.02em;
@@ -52,34 +52,33 @@
 
 .companyTagline {
   color: #dc2626;
-  font-size: clamp(0.9rem, 1.8vw, 1rem);
+  font-size: clamp(0.85rem, 1.8vw, 0.95rem); /* Más pequeño */
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 1.2rem 0; /* Menos margen */
 }
 
 .companyDescription {
   color: #e5e5e5;
-  font-size: clamp(0.95rem, 1.8vw, 1.05rem);
-  line-height: 1.6;
-  margin: 0 0 2rem 0;
+  font-size: clamp(0.9rem, 1.8vw, 1rem); /* Más pequeño */
+  line-height: 1.5; /* Menos espaciado */
+  margin: 0 0 1.5rem 0; /* Menos margen */
   font-weight: 300;
 }
 
-/* Botones de acción */
+/* Botón de acción único */
 .actionButtons {
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+  justify-content: flex-start; /* Alineado a la izquierda */
 }
 
 .whatsappButton {
   background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
   color: white;
   border: none;
-  padding: 0.8rem 1.5rem;
-  font-size: 0.95rem;
+  padding: 0.75rem 1.5rem; /* Ligeramente más pequeño */
+  font-size: 0.9rem; /* Más pequeño */
   font-weight: 600;
   border-radius: 25px;
   cursor: pointer;
@@ -90,6 +89,7 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
   box-shadow: 0 4px 15px rgba(22, 163, 74, 0.3);
+  max-width: 280px; /* Controla el ancho máximo */
 }
 
 .whatsappButton:hover {
@@ -98,32 +98,12 @@
   box-shadow: 0 6px 20px rgba(22, 163, 74, 0.4);
 }
 
-.catalogButton {
-  background: transparent;
-  color: white;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  padding: 0.8rem 1.5rem;
-  font-size: 0.95rem;
-  font-weight: 600;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.catalogButton:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(220, 38, 38, 0.5);
-  transform: translateY(-2px);
-}
-
 /* Títulos de columnas */
 .columnTitle {
   color: white;
-  font-size: clamp(1.1rem, 2.2vw, 1.3rem);
+  font-size: clamp(1rem, 2.2vw, 1.2rem); /* Más pequeño */
   font-weight: 700;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 1.2rem 0; /* Menos margen */
   letter-spacing: 0.02em;
 }
 
@@ -131,7 +111,7 @@
 .contactInfo {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.2rem; /* Menos espacio */
 }
 
 .contactItem {
@@ -149,14 +129,14 @@
 
 .contactText {
   color: white;
-  font-size: clamp(0.95rem, 1.8vw, 1.05rem);
+  font-size: clamp(0.9rem, 1.8vw, 1rem); /* Más pequeño */
   font-weight: 500;
   margin: 0 0 0.2rem 0;
 }
 
 .contactSubtext {
   color: #9ca3af;
-  font-size: clamp(0.85rem, 1.6vw, 0.9rem);
+  font-size: clamp(0.8rem, 1.6vw, 0.85rem); /* Más pequeño */
   margin: 0;
   font-weight: 400;
 }
@@ -169,17 +149,17 @@
 
 .linksList {
   list-style: none;
-  margin: 0 0 2rem 0;
+  margin: 0 0 1.5rem 0; /* Menos margen */
   padding: 0;
 }
 
 .linksList li {
-  margin: 0 0 0.8rem 0;
+  margin: 0 0 0.6rem 0; /* Menos espacio entre enlaces */
 }
 
 .footerLink {
   color: #e5e5e5;
-  font-size: clamp(0.9rem, 1.8vw, 1rem);
+  font-size: clamp(0.85rem, 1.8vw, 0.95rem); /* Más pequeño */
   text-decoration: none;
   transition: all 0.3s ease;
   background: none;
@@ -199,7 +179,7 @@
 .features {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 0.6rem; /* Menos espacio */
 }
 
 .feature {
@@ -211,9 +191,9 @@
 .featureIcon {
   color: #16a34a;
   font-weight: bold;
-  font-size: 1rem;
-  width: 16px;
-  height: 16px;
+  font-size: 0.9rem; /* Más pequeño */
+  width: 14px; /* Más pequeño */
+  height: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -224,7 +204,7 @@
 
 .featureText {
   color: #e5e5e5;
-  font-size: clamp(0.85rem, 1.6vw, 0.9rem);
+  font-size: clamp(0.8rem, 1.6vw, 0.85rem); /* Más pequeño */
   font-weight: 400;
 }
 
@@ -233,18 +213,18 @@
   width: 100%;
   height: 1px;
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-  margin: 2rem 0;
+  margin: 1.5rem 0 1rem 0; /* Menos margen */
 }
 
 /* Copyright */
 .copyright {
   text-align: center;
   color: #9ca3af;
-  font-size: clamp(0.85rem, 1.6vw, 0.9rem);
+  font-size: clamp(0.8rem, 1.6vw, 0.85rem); /* Más pequeño */
 }
 
 .copyright p {
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.3rem 0; /* Menos margen */
 }
 
 .madeWith {
@@ -255,7 +235,7 @@
 /* Responsive */
 @media (max-width: 768px) {
   .footer {
-    padding: 3rem 0 1.5rem 0;
+    padding: 2.5rem 0 1.5rem 0; /* Más compacto en móvil */
   }
   
   .container {
@@ -264,18 +244,16 @@
   
   .footerContent {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
-    margin-bottom: 2rem;
+    gap: 2rem; /* Menos gap en móvil */
+    margin-bottom: 1.5rem;
   }
   
   .actionButtons {
     justify-content: center;
   }
   
-  .whatsappButton,
-  .catalogButton {
-    flex: 1;
-    max-width: 200px;
+  .whatsappButton {
+    max-width: 250px;
     justify-content: center;
   }
   
@@ -293,7 +271,7 @@
   }
   
   .linksList {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
   }
   
   .features {
@@ -302,18 +280,22 @@
 }
 
 @media (max-width: 480px) {
-  .actionButtons {
-    flex-direction: column;
-    gap: 0.8rem;
+  .footer {
+    padding: 2rem 0 1.2rem 0; /* Aún más compacto */
   }
   
-  .whatsappButton,
-  .catalogButton {
+  .whatsappButton {
     width: 100%;
     max-width: 280px;
+    font-size: 0.85rem;
+    padding: 0.7rem 1.2rem;
   }
   
   .footerContent {
-    gap: 2rem;
+    gap: 1.5rem;
+  }
+  
+  .companyDescription {
+    margin-bottom: 1.2rem;
   }
 }

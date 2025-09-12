@@ -1,3 +1,4 @@
+// src/components/ContactSection.js
 import styles from '../styles/ContactSection.module.css';
 
 const ContactSection = () => {
@@ -13,11 +14,11 @@ const ContactSection = () => {
       <div className={styles.container}>
         <div className={styles.contactBox}>
           
-          {/* Ícono de búsqueda/pregunta */}
+          {/* Ícono de búsqueda/pregunta - AGRANDADO */}
           <div className={styles.iconContainer}>
             <svg 
-              width="12" 
-              height="12" 
+              width="48" 
+              height="48" 
               viewBox="0 0 24 24" 
               fill="none" 
               className={styles.searchIcon}
@@ -29,28 +30,26 @@ const ContactSection = () => {
             </svg>
           </div>
 
-          {/* Texto principal */}
-          <h3 className={styles.title}>
-            ¿No encuentras lo que buscas?
-          </h3>
-          
-          <p className={styles.subtitle}>
-            Contáctanos directamente
-          </p>
+          {/* Contenido de texto */}
+          <div className={styles.textContent}>
+            <h3 className={styles.title}>
+              ¿No encuentras lo que buscas?
+            </h3>
+            
+            <p className={styles.subtitle}>
+              Contáctanos directamente
+            </p>
+          </div>
 
-          <p className={styles.description}>
-            Tenemos una amplia variedad de productos. Si no encuentras lo que necesitas en nuestro catálogo, escríbenos y te ayudamos a encontrar el suplemento perfecto para ti.
-          </p>
-
-          {/* Botón de WhatsApp */}
+          {/* Botón de WhatsApp - MEJORADO */}
           <button 
             className={styles.whatsappButton}
             onClick={handleWhatsAppContact}
           >
             <svg 
-              width="14" 
-              height="14" 
-              viewBox="0 0 14 14" 
+              width="20" 
+              height="20" 
+              viewBox="0 0 24 24" 
               fill="currentColor"
               className={styles.whatsappIcon}
             >

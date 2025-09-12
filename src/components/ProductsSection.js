@@ -39,6 +39,29 @@ const ProductDetailModal = ({ product, onClose, onWhatsApp }) => {
               {product.category.toUpperCase()}
             </span>
             <h2 className={styles.modalTitle}>{product.name}</h2>
+              <div className={styles.productDetails}>
+          <div className={styles.priceInfo}>
+            <span className={styles.modalPrice}>
+                {product.currency}{product.price?.toLocaleString()}
+            </span>
+            </div>
+         <div className={styles.productSpecs}>
+        <div className={styles.specItem}>
+            <span className={styles.specLabel}>Peso:</span>
+            <span className={styles.specValue}>{product.detailedInfo.peso}</span>
+      </div>
+      <div className={styles.specItem}>
+        <span className={styles.specLabel}>Sabor:</span>
+        <span className={styles.specValue}>{product.detailedInfo.sabor}</span>
+      </div>
+      {product.detailedInfo.servicios && (
+        <div className={styles.specItem}>
+          <span className={styles.specLabel}>Servicios:</span>
+          <span className={styles.specValue}>{product.detailedInfo.servicios}</span>
+        </div>
+      )}
+    </div>
+  </div>
             <p className={styles.modalDescription}>{product.description}</p>
           </div>
         </div>
@@ -175,7 +198,10 @@ const ProductsSection = () => {
       price: 2500,
       currency: "RD$",
       detailedInfo: {
-        summary: "Proteína de 2 libras sabor chocolate de suero aislada con 90% de pureza, libre de lactosa y carbohidratos. Ideal para definición muscular y deportistas con sensibilidad digestiva.",
+        summary: "Proteína de suero aislada con 90% de pureza, libre de lactosa y carbohidratos. Ideal para definición muscular y deportistas con sensibilidad digestiva.",
+        peso: "2 lbs(907g)",
+        servicios: "30 aprox",
+        sabor: "Chocolate",
         nutritionalInfo: {
           title: "Información Nutricional (por porción 30g)",
           content: [
@@ -212,7 +238,7 @@ const ProductsSection = () => {
     },
     {
       id: 2,
-      name: "MASS GAINER", 
+      name: "EVL MASS GAINER", 
       category: "proteina",
       description: "Ideal para aumentar masa muscular y peso corporal",
       image: "/products/mass-gainer.png",
@@ -221,6 +247,8 @@ const ProductsSection = () => {
       currency: "RD$",
       detailedInfo: {
         summary: "Fórmula completa con proteínas de alta calidad y carbohidratos complejos. Diseñado para atletas que buscan aumentar peso y masa muscular de forma efectiva.",
+        peso:  "6 lbs(2727g)",
+        sabor:  "Vainilla",
         nutritionalInfo: {
           title: "Información Nutricional (por porción 100g)",
           content: [
@@ -266,6 +294,9 @@ const ProductsSection = () => {
       currency: "RD$",
       detailedInfo: {
         summary: "Proteína transparente e innovadora que se mezcla como una bebida refrescante. Sin lácteos, sin espuma, con sabores frutales únicos.",
+        peso: "2 lbs(907g)",
+        servicios: "30 aprox",
+        sabor: "Cookies & cream",
         nutritionalInfo: {
           title: "Información Nutricional (por porción 25g)",
           content: [
@@ -311,6 +342,9 @@ const ProductsSection = () => {
       currency: "RD$",
       detailedInfo: {
         summary: "Proteína hidrolizada de máxima calidad con absorción instantánea. Procesada para eliminar lactosa y maximizar la biodisponibilidad.",
+        peso: "2 lbs(907g)",
+        servicios: "30 aprox",
+        sabor: "Vainilla",
         nutritionalInfo: {
           title: "Información Nutricional (por porción 30g)",
           content: [
@@ -356,6 +390,8 @@ const ProductsSection = () => {
       currency: "RD$",
       detailedInfo: {
         summary: "Mass gainer premium con carbohidratos de calidad y proteínas de múltiples fuentes. Sin azúcares añadidos, ideal para ganancia de peso limpia.",
+        peso: "5.5 lbs(2495g)",
+        sabor: "Cookies & cream",
         nutritionalInfo: {
           title: "Información Nutricional (por porción 85g)",
           content: [
@@ -401,6 +437,9 @@ const ProductsSection = () => {
       currency: "RD$",
       detailedInfo: {
         summary: "Segunda presentación de nuestra proteína transparente con sabor diferente. Misma calidad premium, experiencia refrescante única.",
+        peso: "2 lbs(907g)",
+        servicios: "30 aprox",
+        sabor: "Doble Chocolate",
         nutritionalInfo: {
           title: "Información Nutricional (por porción 25g)",
           content: [
@@ -446,6 +485,9 @@ const ProductsSection = () => {
       currency: "RD$",
       detailedInfo: {
         summary: "Creatina monohidrato pura de MuscleTech. Incrementa la fuerza, potencia y volumen muscular. Ideal para entrenamientos de alta intensidad.",
+        peso: "400g",
+        servicios: "80 aprox",
+        sabor: "sin sabor",
         nutritionalInfo: {
           title: "Información Nutricional (por porción 5g)",
           content: [
@@ -491,6 +533,9 @@ const ProductsSection = () => {
       currency: "RD$",
       detailedInfo: {
         summary: "L-Glutamina pura para acelerar la recuperación muscular y fortalecer el sistema inmunológico. Esencial para atletas de alto rendimiento.",
+        peso: "300g",
+        servicios: "60 aprox",
+        sabor: "Sin sabor",
         nutritionalInfo: {
           title: "Información Nutricional (por porción 5g)",
           content: [
@@ -536,6 +581,9 @@ const ProductsSection = () => {
       currency: "RD$",
       detailedInfo: {
         summary: "Creatina monohidrato de Nutrex Research con pureza garantizada. Micronizada para disolución perfecta y absorción máxima.",
+        peso: "300g",
+        servicios: "60 aprox",
+        sabor: "sin sabor",
         nutritionalInfo: {
           title: "Información Nutricional (por porción 5g)",
           content: [

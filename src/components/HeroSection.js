@@ -47,7 +47,7 @@ const HeroSection = () => {
             Los mejores suplementos para alcanzar tus objetivos fitness.
           </p>
           <p className={styles.productsList}>
-            Proteínas, Creatinas, Aminoácidos y Pre-workout.
+            Proteínas, Creatinas y más para tus objetivos fitness.
           </p>
           <p className={styles.guarantee}>
             Calidad garantizada, resultados comprobados.

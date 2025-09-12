@@ -1,36 +1,130 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pro Fit RD - Tienda de Suplementos Deportivos
 
-## Getting Started
+Una página web moderna y profesional para Pro Fit RD, especializada en la venta de proteínas, creatinas y suplementos deportivos de alta calidad.
 
-First, run the development server:
+## 🚀 Demo en Vivo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Visita la página: **[profit-rd.vercel.app](https://profit-rd.vercel.app)**
+
+## 📋 Características Principales
+
+- **Catálogo Interactivo**: Sistema completo de productos con filtros por categoría
+- **Información Detallada**: Modales con información nutricional, modo de uso y beneficios
+- **Diseño Minimalista**: Interface moderna y clean siguiendo tendencias actuales de UX/UI
+- **Responsive Design**: Experiencia optimizada para móviles y tablets
+- **WhatsApp Integration**: Contacto directo para pedidos y consultas
+- **Precios Transparentes**: Visualización clara de precios en pesos dominicanos (RD$)
+
+## 🛠️ Tecnologías Utilizadas
+
+- **Frontend**: Next.js 13+ (React Framework)
+- **Estilos**: CSS Modules + Responsive Design
+- **Deployment**: Vercel (Deploy automático)
+- **Version Control**: Git + GitHub
+
+## 🏗️ Estructura del Proyecto
+
+```
+profit-rd/
+├── src/
+│   ├── components/           # Componentes reutilizables
+│   │   ├── HeroSection.js
+│   │   ├── ProductsSection.js
+│   │   ├── ContactSection.js
+│   │   ├── WhyChooseSection.js
+│   │   ├── SupplementGuideSection.js
+│   │   └── TestimonialsSection.js
+│   ├── styles/              # CSS Modules
+│   │   ├── globals.css
+│   │   └── *.module.css
+│   └── pages/               # Páginas de Next.js
+│       ├── _app.js
+│       └── index.js
+├── public/                  # Assets estáticos
+│   └── products/           # Imágenes de productos
+└── package.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📦 Productos Disponibles
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Proteínas
+- **Whey Isolate** - Proteína pura para definición
+- **Mass Gainer** - Ganancia de masa muscular
+- **Clear Premium** - Proteína transparente refrescante
+- **BPI Sports ISO HD** - Absorción ultra rápida
+- **Rule 1 Mass Gainer** - Fórmula premium
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Otros Suplementos
+- **Creatina** (MuscleTech & Nutrex) - Fuerza y potencia
+- **Glutamina** - Recuperación muscular
 
-## Learn More
+## 🚀 Instalación y Desarrollo
 
-To learn more about Next.js, take a look at the following resources:
+### Prerrequisitos
+- Node.js 16+ 
+- npm o yarn
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Clonar e Instalar
+```bash
+git clone https://github.com/JosueBernabe17/Profit.rd.git
+cd Profit.rd
+npm install
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Ejecutar en Desarrollo
+```bash
+npm run dev
+```
+Abrir [http://localhost:3000](http://localhost:3000) en el navegador.
 
-## Deploy on Vercel
+### Build para Producción
+```bash
+npm run build
+npm start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎨 Características de Diseño
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Paleta de Colores**: Negro, blanco y rojo (#dc2626)
+- **Tipografía**: Inter font family para máxima legibilidad
+- **Efectos Visuales**: Backdrop-filter, transparencias y microanimaciones
+- **UX Optimizada**: Navegación intuitiva y información accesible
+
+## 📱 Responsive Design
+
+- **Desktop**: Experiencia completa con grid adaptativo
+- **Tablet**: Layout optimizado para pantallas medianas  
+- **Mobile**: Diseño vertical con navegación simplificada
+
+## 🔧 Funcionalidades Técnicas
+
+- **Modales Dinámicos**: Información detallada de cada producto
+- **Filtros por Categoría**: Sistema de navegación por tipo de suplemento
+- **Integración WhatsApp**: Enlaces directos para consultas comerciales
+- **SEO Optimizado**: Meta tags y estructura semántica
+- **Performance**: Optimización de imágenes y CSS
+
+## 📞 Contacto
+
+- **WhatsApp**: +1-829-754-2767
+- **Instagram**: [@pro.fitrd](https://www.instagram.com/pro.fitrd)
+
+## 🚀 Deploy
+
+Este proyecto está configurado para deploy automático en Vercel:
+
+1. Conectar repositorio de GitHub a Vercel
+2. Configuración automática detectada (Next.js)
+3. Deploy en cada push a main branch
+
+## 📝 Licencia
+
+Este proyecto es propiedad de Pro Fit RD.
+
+## 🤝 Contribuciones
+
+Para contribuciones o mejoras, crear un issue o pull request.
+
+---
+
+**Desarrollado para Pro Fit RD** - Tienda de proteínas y suplementos en República Dominicana

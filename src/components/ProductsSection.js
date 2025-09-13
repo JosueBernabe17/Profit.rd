@@ -481,7 +481,7 @@ const ProductsSection = () => {
       description: "Aumenta tu fuerza y potencia en entrenamientos de alta intensidad.",
       image: "/products/creatinaMuscle.png", 
       categoryColor: "#dc2626",
-      price: 2500,
+      price: 2400,
       currency: "RD$",
       detailedInfo: {
         summary: "Creatina monohidrato pura de MuscleTech. Incrementa la fuerza, potencia y volumen muscular. Ideal para entrenamientos de alta intensidad.",

@@ -27,29 +27,27 @@ const TestimonialsSection = () => {
     {
       id: 1,
       text: "Excelente calidad en todos sus productos. La glutamina me ha ayudado muchísimo con la recuperación después de entrenamientos intensos.",
-      name: "María González",
+      name: "Franklin Brito",
       role: "Atleta fitness",
       rating: 5
     },
     {
       id: 2,
       text: "El Mass Gainer de Pro Fit ha sido clave en mi aumento de peso. Resultados visibles en menos de 2 meses. Totalmente recomendado.",
-      name: "Franklin Brito",
-      role: "Culturista amateur",
+      name: "Fernando Ramírez",
       rating: 5
     },
     {
       id: 3,
       text: "Clear Protein es increíble! Por fin una proteína que no me cae pesada y con sabores realmente refrescantes. La mejor inversión.",
-      name: "Ana Martínez",
-      role: "Entrenadora personal",
+      name: "Emely Díaz",
       rating: 5
     },
     {
       id: 4,
       text: "Servicio al cliente excepcional. Me asesoraron perfectamente sobre qué suplementos usar para mis objetivos. Muy profesionales.",
-      name: "Fernando Ramírez",
-      role: "Powerlifter",
+      name: "Kelvin Rodríguez",
+      role: "Entrenador personal",
       rating: 5
     }
   ];

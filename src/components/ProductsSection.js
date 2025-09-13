@@ -577,7 +577,7 @@ const ProductsSection = () => {
       description: "Mejora tu rendimiento físico y aumenta la masa muscular magra.",
       image: "/products/creatinaNutrex.png", 
       categoryColor: "#dc2626",
-      price: 1300,
+      price: 1350,
       currency: "RD$",
       detailedInfo: {
         summary: "Creatina monohidrato de Nutrex Research con pureza garantizada. Micronizada para disolución perfecta y absorción máxima.",

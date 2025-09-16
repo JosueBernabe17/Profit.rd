@@ -195,7 +195,7 @@ const ProductsSection = () => {
       description: "Proteína de rápida absorción ideal para después del entrenamiento.",
       image: "/products/whey-isolate.png",
       categoryColor: "#dc2626",
-      price: 2500,
+      price: 2700,
       currency: "RD$",
       detailedInfo: {
         summary: "Proteína de suero aislada con 90% de pureza, libre de lactosa y carbohidratos. Ideal para definición muscular y deportistas con sensibilidad digestiva.",
@@ -243,7 +243,7 @@ const ProductsSection = () => {
       description: "Ideal para aumentar masa muscular y peso corporal",
       image: "/products/mass-gainer.png",
       categoryColor: "#dc2626",
-      price: 3500,
+      price: 3700,
       currency: "RD$",
       detailedInfo: {
         summary: "Fórmula completa con proteínas de alta calidad y carbohidratos complejos. Diseñado para atletas que buscan aumentar peso y masa muscular de forma efectiva.",
@@ -290,7 +290,7 @@ const ProductsSection = () => {
       description: "Proteína pura para definición y recuperación muscular.",
       image: "/products/clear-protein.png",
       categoryColor: "#dc2626",
-      price: 2500,
+      price: 2700,
       currency: "RD$",
       detailedInfo: {
         summary: "Proteína transparente e innovadora que se mezcla como una bebida refrescante. Sin lácteos, sin espuma, con sabores frutales únicos.",
@@ -338,7 +338,7 @@ const ProductsSection = () => {
       description: "Proteína de suero hidrolizada para una absorción ultra rápida.", 
       image: "/products/bpi-sports-iso-hd.png",
       categoryColor: "#dc2626",
-      price: 2600,
+      price: 2800,
       currency: "RD$",
       detailedInfo: {
         summary: "Proteína hidrolizada de máxima calidad con absorción instantánea. Procesada para eliminar lactosa y maximizar la biodisponibilidad.",
@@ -386,7 +386,7 @@ const ProductsSection = () => {
       description: "Fórmula avanzada para un aumento de masa muscular limpio y efectivo.", 
       image: "/products/rule1-mass-gainer.png",
       categoryColor: "#dc2626",
-      price: 3800,
+      price: 4000,
       currency: "RD$",
       detailedInfo: {
         summary: "Mass gainer premium con carbohidratos de calidad y proteínas de múltiples fuentes. Sin azúcares añadidos, ideal para ganancia de peso limpia.",
@@ -433,7 +433,7 @@ const ProductsSection = () => {
       description: "Proteína pura para definición y recuperación muscular.",
       image: "/products/clear-protein-c.png",
       categoryColor: "#dc2626",
-      price: 2500,
+      price: 2700,
       currency: "RD$",
       detailedInfo: {
         summary: "Segunda presentación de nuestra proteína transparente con sabor diferente. Misma calidad premium, experiencia refrescante única.",
